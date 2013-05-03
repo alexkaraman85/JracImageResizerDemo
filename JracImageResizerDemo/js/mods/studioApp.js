@@ -3,6 +3,15 @@
 
     module.setup = function() {
         var $form = $('#js-image-settings');
+        var inputs = $form.find('input:text');
+        var events = [
+            'jrac_crop_x'
+            , 'jrac_crop_y'
+            , 'jrac_crop_width'
+            , 'jrac_crop_height'
+            , 'jrac_image_width'
+            , 'jrac_image_height'
+        ];
 
         $('img').jrac({
             'viewport_resize': false
@@ -11,15 +20,6 @@
             , 'zoom_max': 650
             , 'viewport_onload': function () {
                 var $viewport = this;
-                var inputs = $form.find('input:text');
-                var events = [
-                    'jrac_crop_x'
-                    , 'jrac_crop_y'
-                    , 'jrac_crop_width'
-                    , 'jrac_crop_height'
-                    , 'jrac_image_width'
-                    , 'jrac_image_height'
-                ];
 
                 for (var i = 0; i < events.length; i++) {
                     var eventName = events[i];

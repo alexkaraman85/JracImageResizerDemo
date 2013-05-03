@@ -179,6 +179,7 @@
     <Content Include="js\libs\jrac\style.jrac.css" />
     <Content Include="js\libs\require.js" />
     <Content Include="js\mods\app.js" />
+    <Content Include="js\mods\loader.js" />
     <Content Include="js\mods\main.js" />
     <Content Include="js\mods\studioApp.js" />
     <Content Include="Web.config" />
