@@ -1,0 +1,84 @@
+﻿@{
+    Layout = "";
+}
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <title>jrac and ImageResizer</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="js/libs/jrac/style.jrac.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+    </head>
+    <body>
+
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="/">jrac and ImageResizer</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            
+
+            <div class="row">
+                <div class="span9">
+                    <img id="js-image" src="http://24.media.tumblr.com/tumblr_m6ut8b4jnI1qb0upko1_400.jpg" alt="hello, I'm a bear" />
+                </div>
+
+                <div class="span3">
+                    <form id="js-image-settings" action="Home/Process" method="POST">
+                        <input type="hidden" name="ImageUrl" value="http://24.media.tumblr.com/tumblr_m6ut8b4jnI1qb0upko1_400.jpg" />
+                        <div class="input-prepend input-append">
+                            <input type="text" class="input-mini" name="CropX" />
+                            <span class="add-on">X</span>
+                        </div>
+                        <br/>
+                        <div class="input-prepend input-append">
+                            <input type="text" class="input-mini" name="CropY" />
+                            <span class="add-on">Y</span>
+                        </div>
+                        <br/>
+                        <div class="input-prepend input-append">
+                            <input type="text" class="input-mini" name="CropWidth" />
+                            <span class="add-on">W</span>
+                        </div>
+                        <br/>
+                        <div class="input-prepend input-append">
+                            <input type="text" class="input-mini" name="CropHeight" />
+                            <span class="add-on">H</span>
+                        </div>
+                        <br/>
+                        <div class="input-prepend input-append">
+                            <input type="text" class="input-mini" name="ImageWidth" />
+                            <span class="add-on">imgW</span>
+                        </div>
+                        <br/>
+                        <div class="input-prepend input-append">
+                            <input type="text" class="input-mini" name="ImageHeight" />
+                            <span class="add-on">imgH</span>
+                        </div>
+                        <br/>
+
+                        <button class="btn">Send Image</button>
+                    </form>
+                </div>
+
+            </div>
+
+
+            <div class="clear"></div>
+        </div>
+        <script type="text/javascript" src="js/libs/jquery.js"></script>
+        <script type="text/javascript" src="js/libs/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/libs/jrac/jquery.jrac.js"></script>
+        <script type="text/javascript" src="js/libs/bootstrap.js"></script>
+        <script type="text/javascript" src="js/mods/app.js"></script>
+
+
+    </body>
+</html>
