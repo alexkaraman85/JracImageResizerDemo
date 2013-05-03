@@ -2,7 +2,7 @@
     var module = {};
 
     module.setup = function() {
-        var $form = $('#js-image-settings');
+        var $form = $('#js-image-settings'), $img = $('#js-image');
         var inputs = $form.find('input:text');
         var events = [
             'jrac_crop_x'
@@ -13,7 +13,7 @@
             , 'jrac_image_height'
         ];
 
-        $('img').jrac({
+        $img.jrac({
             'viewport_resize': false
             , 'viewport_width': 650
             , 'viewport_height': 650
