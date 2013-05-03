@@ -177,7 +177,10 @@
     <Content Include="js\libs\jrac\images\viewport_background.gif" />
     <Content Include="js\libs\jrac\jquery.jrac.js" />
     <Content Include="js\libs\jrac\style.jrac.css" />
+    <Content Include="js\libs\require.js" />
     <Content Include="js\mods\app.js" />
+    <Content Include="js\mods\main.js" />
+    <Content Include="js\mods\studioApp.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
